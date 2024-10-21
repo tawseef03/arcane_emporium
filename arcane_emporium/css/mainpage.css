@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Sherwood';
+    src: url(../fonts/SHERWOOD.TTF);
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url(../fonts/Alegreya.ttf);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.upper {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../rsc/baldursgatebg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 690px;
+}
+
+header {
+    height: 90px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.subpages {    
+    display: flex;
+    justify-content: right;
+    padding-top: 35px;
+    padding-right: 10px;
+}
+
+.button {    
+    background-color: transparent;
+    border: none;
+    padding: 0px 13px;
+    font-size: 18px;
+    color: white;
+    font-family: "Sherwood";
+    text-decoration: none;
+}
+
+.title {
+    color: #bf9b30;
+    font-family: 'Sherwood';
+    font-size: 110px;
+    text-align: center;
+}
+
+.slogan {
+    color: #ffcf40;
+    font-family: 'Sherwood';
+    font-size: 30px;
+    text-align: center;
+}
+
+.gold {
+    width: 100%;
+    height: 350px;
+    background-color: #8f7c03;
+    display: flex;
+    align-items: center;
+}
+
+.desc {
+    padding: 20px 0px 0px 20px;
+    font-family: 'Alegreya';
+    width: 60%;
+    font-size: 30px;
+}
+
+.login {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../rsc/homebg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 400px;
+}
+
+.login{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.btn {
+    display: block;
+    width: 330px;
+    height: 60px;
+    background: #8f7c03;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Alegreya';
+    font-size: 40px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+#login {
+    color: #ffcf40;
+    text-align: center;
+    font-family: 'Alegreya';
+    font-size: 20px;
+}

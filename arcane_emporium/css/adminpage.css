@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Sherwood';
+    src: url(../fonts/SHERWOOD.TTF);
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url(../fonts/Alegreya.ttf);
+}
+
+body {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url("../rsc/adminbg.png");
+    backdrop-filter: blur(7px);
+    z-index: -1;
+    color: white;
+}
+
+header {
+    height: 90px;
+    background-color: #13396D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {    
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Sherwood';
+}
+
+.container {
+    margin-left: 20px;
+    font-family: 'Alegreya';
+}
+
+.btn {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #13396D;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+table {
+    font-size: 20px;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+tr { 
+    border: solid;
+    border-width: 1px 0;
+}
+thead {
+    background-color: #13396D;
+}
+thead th:nth-child(1) {
+    width: 50px;
+}
+thead th:nth-child(2) {
+    width: 100px;
+}
+thead th:nth-child(3) {
+    width: 300px;
+}
+thead th:nth-child(4) {
+    width: 100px;
+}
+thead th:nth-child(5) {
+    width: 200px;
+}
+thead th:nth-child(6) {
+    width: 70px;
+}
+th, td {
+    padding: 8px;
+}
+td {
+    text-align: center;
+}
+
+
+.item {
+    justify-content: center;
+}
+
+form {
+    margin: 20px;
+    font-family: 'Alegreya';
+    font-size: 30px;
+}
+
+.itemname {
+    width: 150px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.itemdesc {
+    width: 300px;
+    height: 100px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.submit {
+    display: block;
+    width: 115px;
+    height: 50px;
+    background: #13396D;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Alegreya';
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.adminbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.adminbtns {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.adminbtn {
+    display: block;
+    width: 300px;
+    height: 100px;
+    background: #13396D;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    line-height: 95px;
+    font-size: 40px;
+    font-family: 'Alegreya';
+}

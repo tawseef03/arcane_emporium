@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<?php
+require_once("../db/DB_connect1.php"); 
+?>
+
+<head>
+    <title>Login Form</title>
+    <script language="JavaScript" type="text/JavaScript">
+function validate(userForm) {
+
+var div=document.getElementById("usrmsg");
+div.style.color="red";
+if(div.hasChildNodes())
+{
+div.removeChild(div.firstChild);
+}
+if(userForm.username.value.length ==0) // #11
+{
+div.appendChild(document.createTextNode("Name cannot be blank"));
+userForm.username.focus();
+return false;
+}
+
+var div=document.getElementById("passwdmsg");
+div.style.color="red";
+if(div.hasChildNodes())
+{
+div.removeChild(div.firstChild);
+}
+if(userForm.pma_password.value.length <=8) // #9
+{
+div.appendChild(document.createTextNode("The password should be of at least size 8"));
+userForm.pma_password.focus();
+return false;
+}
+div=document.getElementById("repasswdmsg");
+div.style.color="red";
+if(div.hasChildNodes())
+{
+div.removeChild(div.firstChild);
+}
+if(userForm.password.value != userForm.repassword.value) // #10
+{
+div.appendChild(document.createTextNode("The two passwords don't match"));
+userForm.password.focus();
+return false;
+}
+
+var div=document.getElementById("emailmsg"); // #1
+div.style.color="red"; // #2
+if(div.hasChildNodes()) // #3
+{
+div.removeChild(div.firstChild); // #4
+}
+regex=/(^\w+\@\w+\.\w+)/; // #5
+match=regex.exec(userForm.emailaddress.value);
+if(!match)
+{
+div.appendChild(document.createTextNode("Invalid Email")); // #6
+userForm.emailaddress.focus(); // #7
+return false; // #8
+}
+
+return true;
+}
+</script>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <h1 align="center">Welcome to Signup Page</h1>
+    <br/>
+    <!-- Login form -->
+    <div align="center">
+        <form method="post" action="../php/register.php" onsubmit="return validate(this);">
+            <fieldset style="width:350px" align="center">
+                <legend align="left"><b>Signup</b></legend>
+                <div>
+                    <label
+                        for="input_username">Username:</label>
+                    <input type="text" name="username" size="24" /><br /><span id="usrmsg"></span>
+                </div>
+                <br />
+                <div>
+                    <label
+                        for="input_password">Password:</label>
+                    <input type="password" name="pma_password" value="" size="24" /><br /><span id="passwdmsg"></span>
+                </div>
+                <br />
+                <div>
+                    <label for="input_password2">Re-enter Password:</label>
+                    <input type="password" name="repassword" value="" size="24" /><br /><span id="repasswdmsg"></span>
+                </div>
+                <br />
+                <div>
+                    <label
+                        for="email">Email:</label>
+                    <input type="text" name="emailaddress" value="" size="24" /><br /><span id="emailmsg"></span>
+                </div>
+
+
+            </fieldset>
+            <fieldset style="width:350px" align="center"><input value="Signup" type="submit" name="Signup" /> 
+            <input value="Reset" type="reset" />
+            </fieldset>
+        </form>
+        <center>
+            <br><br>
+            <font face='Verdana' size='2'><a href='loginform.html'>Already registered ? Please Login</a></font>
+        </center>
+    </div>
+</body>
+
+</html>

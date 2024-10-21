@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login & Signup Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/loginsignup.css">
+</head>
+
+<body>
+    <div class="whole">
+        
+        
+        <div class="box">
+            <div class="buttons">
+                <div id="btn"></div>
+                <button type="button" class="toggle" onclick="login()">Log In</button>
+                <button type="button" class="toggle" onclick="signup()">Sign Up</button>
+            </div>
+            
+            <form id="login" class="userinput" method="post" action="../php/login.php">
+                
+                <label for="luser">Username:</label>
+                <input type="text" name="luser" class="inputfield" id="luser">
+                
+                <label for="lpass">Password:</label>
+                <input type="password" name="lpass" class="inputfield" id="lpass">
+                
+                <input type="checkbox" class="login-checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit">Login</button>
+
+            </form>
+
+            <form id="signup" class="userinput" method="post" action="../php/process-signup.php" novalidate>
+                
+                <label for="suser">Username:</label>
+                <input type="text" class="inputfield" name="suser" id="suser">
+                
+                <label for="semail">Email:</label>
+                <input type="email" class="inputfield" name="semail" id="semail">
+                
+                <label for="spass">Password:</label>
+                <input type="password" class="inputfield" name="spass" id="spass">
+                
+                <label for="srepass">Re-enter Password:</label>
+                <input type="password" class="inputfield" name="srepass" id="srepass">
+                
+                <input type="checkbox" class="signup-checkbox"><span>I agree to the Terms & Conditions</span>
+                <button type="submit" class="submit">Sign up</button>
+
+            </form>
+        </div>
+
+    
+    </div>
+    <script src="../js/loginsignup.js"></script>
+
+</body>
+
+</html>

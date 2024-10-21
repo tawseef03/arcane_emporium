@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Alegreya';
+    src: url(../fonts/Alegreya.ttf);
+}
+
+@font-face {
+    font-family: 'Sherwood';
+    src: url(../fonts/SHERWOOD.TTF);
+}
+
+body {    
+    content: '';
+    position: absolute;
+    height: 100% auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../rsc/repeat.jpg");
+    backdrop-filter: blur(7px);
+    z-index: -1;
+    color: black;
+    overflow: auto;
+}
+
+header {
+    height: 90px;
+    background-color: #bf9b30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {    
+    color: black;
+    font-size: 50px;
+    font-family: 'Sherwood';
+}
+
+.shop {
+    margin: 20px 20px;
+    display: flex;
+
+}
+
+.box {
+    display: grid;
+    margin: 20px 20px;  
+    border: 1px solid black;
+    background-color: #bf9b30;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Alegreya';
+    padding: 10px 10px;
+    width: 300px;
+    height:350px;
+}

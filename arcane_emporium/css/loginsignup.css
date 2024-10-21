@@ -1,0 +1,128 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.whole {    
+    height: 100%;
+    width: 100%;    
+    background-image: linear-gradient(rgba(61, 145, 73, 0.9),rgba(61, 145, 73, 0.9)), url(../rsc/bgimg.avif);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    max-height: 600px;
+    max-width: 500px;    
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+    background: rgb(255, 255, 255);        
+    margin: auto;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.buttons {
+    top: 30px;
+    height: 35px;
+    width:50%;
+    margin-top: 6% auto;
+    margin: 10% auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #34861f1f;
+    border-radius: 30px;
+}
+
+.toggle {
+    padding: 4% 16%;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #039C1E, #36F458);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.userinput {
+    top: 160px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    padding: 7%;
+}
+
+label {
+    padding-left: 2px;
+}
+
+.inputfield {
+    width: 92%;
+    margin: 5px 0;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label {
+    margin: 10px 0px 10px 2px;
+    color: #777;
+}
+
+.submit {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to top, #039C1E, #36F458);
+    border: 0;
+    outline: none;
+    border-radius: 30px
+}
+
+.login-checkbox {
+    margin: 30px 10px 30px 45px;
+}
+
+.signup-checkbox {
+    margin: 30px 10px 30px 10px;
+}
+
+span {
+    color: #777;    
+    position: relative;
+}
+
+#login {
+    left: 15%;
+}
+
+#signup {
+    left: 1000%;
+}
+
+.side {
+    height: 100%;
+    width: 50%;
+}
